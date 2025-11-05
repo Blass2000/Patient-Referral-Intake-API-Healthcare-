@@ -1,21 +1,28 @@
-In this example here is the Endpoint Summary
-Create referral (idempotent)
-Method/Path: POST /v1/referrals
-Auth: OAuth2 client-credentials + mTLS
-Headers:
-Authorization: Bearer <token>
+# Referral Intake API – Care Coordination Platform
 
+The **Referral Intake API** enables external healthcare partners to securely submit patient referrals into the Care Coordination platform. Referrals are validated, stored, processed for eligibility, synchronized with downstream clinical systems, and made available for analytics.
 
-Idempotency-Key: <uuid> (required)
-Content-Type: application/json
-Sync/Async: Synchronous validation; referral creation is queued for async eligibility processing. Returns 202 Accepted.
-Get referral by ID
-Method/Path: GET /v1/referrals/{referralId}
-Caching: ETag/If-None-Match supported
-PII Masking: ?mask=true redacts PHI for non-privileged scopes
-List referrals (paged)
-Method/Path: GET /v1/referrals?status=pending&created_since=2025-10-01&limit=50&cursor=...
-Pagination: cursor-based (stable under concurrent writes)
-Outbound webhook (status change)
-Callback URL (partner-registered): POST https://partner.example.com/webhooks/referrals.status
-Signing: X-Signature (HMAC-SHA256)
+This repository includes the OpenAPI specification, sample payloads, data-flow documentation, and onboarding instructions for developers integrating with the API.
+
+---
+
+## ✅ Key Capabilities
+
+- Submit patient referrals via **idempotent POST** endpoint  
+- Retrieve referral details, current status, and event history  
+- Receive **webhook notifications** when referral statuses change  
+- PHI masking via `?mask=true` and role-based scopes  
+- Designed for scale: rate limits, async processing, webhook retries, audit logs  
+- HIPAA-aligned security using OAuth2, mTLS, and encrypted data storage
+
+---
+
+## 🔌 Endpoints (Summary)
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/v1/referrals` | Create a new referral (idempotent) |
+| `GET`  | `/v1/referrals/{referralId}` | Retrieve referral details & status |
+| `GET`  | `/v1/referrals` | List referrals with filtering + cursor pagination |
+
+All requests require:
