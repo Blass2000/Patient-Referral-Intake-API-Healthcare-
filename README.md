@@ -60,7 +60,7 @@ Idempotency-Key: <uuid> # POST only
   }
 }
 
-Response (202 Accepted)
+## 📥 Response (202 Accepted)
 
 {
   "referralId": "RFL-7f1a7f83",
