@@ -1,0 +1,9 @@
+{
+  "referralId": "RFL-7f1a7f83",
+  "status": "PENDING_ELIGIBILITY",
+  "receivedAt": "2025-11-02T16:42:21Z",
+  "links": {
+    "self": "/v1/referrals/RFL-7f1a7f83",
+    "events": "/v1/referrals/RFL-7f1a7f83/events"
+  }
+}
