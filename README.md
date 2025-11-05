@@ -59,9 +59,10 @@ Idempotency-Key: <uuid> # POST only
     "submittedAt": "2025-11-02T16:42:19Z"
   }
 }
-----
+
+
 ## 📥 Response (202 Accepted)
----
+
 
 {
   "referralId": "RFL-7f1a7f83",
@@ -93,5 +94,8 @@ Standard Error Model
     "correlationId": "c9b21a4f-9e67-4d8c-9f50-63f1a6d2d2b3"
   }
 }
+
+
+Common error codes: UNAUTHORIZED, FORBIDDEN, VALIDATION_FAILED, CONFLICT, RATE_LIMITED, INTERNAL_ERROR.
 
 
