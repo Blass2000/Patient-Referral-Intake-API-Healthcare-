@@ -4,6 +4,8 @@ Method/Path: POST /v1/referrals
 Auth: OAuth2 client-credentials + mTLS
 Headers:
 Authorization: Bearer <token>
+
+
 Idempotency-Key: <uuid> (required)
 Content-Type: application/json
 Sync/Async: Synchronous validation; referral creation is queued for async eligibility processing. Returns 202 Accepted.
