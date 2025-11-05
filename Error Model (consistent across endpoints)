@@ -1,0 +1,10 @@
+{
+  "error": {
+    "code": "VALIDATION_FAILED",
+    "message": "diagnosisCodes[0] is not a recognized ICD-10 code",
+    "details": [
+      {"path":"referral.diagnosisCodes[0]","issue":"INVALID_VALUE","hint":"Use ICD-10"}
+    ],
+    "correlationId": "c9b21a4f-9e67-4d8c-9f50-63f1a6d2d2b3"
+  }
+}
