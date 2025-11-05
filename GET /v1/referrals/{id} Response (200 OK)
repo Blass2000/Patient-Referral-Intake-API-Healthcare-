@@ -1,0 +1,14 @@
+{
+  "referralId": "RFL-7f1a7f83",
+  "status": "ELIGIBILITY_PASSED",
+  "patient": { "mrn": "A1234567", "firstName": "Jamie", "lastName": "Nguyen", "dob": "1986-04-03" },
+  "referral": { "type": "DENTURE_FIT", "priority": "ROUTINE" },
+  "insurance": { "payerId": "HUMANA", "memberId": "HUM123456" },
+  "createdAt": "2025-11-02T16:42:21Z",
+  "updatedAt": "2025-11-02T16:44:10Z",
+  "events": [
+    {"at":"2025-11-02T16:42:21Z","type":"RECEIVED"},
+    {"at":"2025-11-02T16:43:10Z","type":"ELIGIBILITY_CHECK_STARTED"},
+    {"at":"2025-11-02T16:44:10Z","type":"ELIGIBILITY_PASSED"}
+  ]
+}
