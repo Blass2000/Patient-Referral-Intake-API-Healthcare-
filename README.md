@@ -59,8 +59,9 @@ Idempotency-Key: <uuid> # POST only
     "submittedAt": "2025-11-02T16:42:19Z"
   }
 }
-
+----
 ## 📥 Response (202 Accepted)
+---
 
 {
   "referralId": "RFL-7f1a7f83",
