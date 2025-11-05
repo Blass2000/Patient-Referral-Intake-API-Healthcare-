@@ -1,0 +1,40 @@
+{
+  "referralId": "EXT-REF-893452", 
+  "partnerClinicId": "CLINIC-1039",
+  "patient": {
+    "mrn": "A1234567",
+    "firstName": "Jamie",
+    "lastName": "Nguyen",
+    "dob": "1986-04-03",
+    "sexAtBirth": "F",
+    "phone": "+14045551212",
+    "address": {
+      "line1": "123 Peachtree St NE",
+      "city": "Atlanta",
+      "state": "GA",
+      "postalCode": "30303"
+    }
+  },
+  "referral": {
+    "type": "DENTURE_FIT",
+    "priority": "ROUTINE",
+    "diagnosisCodes": ["K08.1"],
+    "notes": "Upper denture evaluation requested",
+    "attachments": [
+      {
+        "type": "XRAY_PANORAMIC",
+        "contentType": "application/pdf",
+        "base64": "<truncated>"
+      }
+    ]
+  },
+  "insurance": {
+    "payerId": "HUMANA",
+    "memberId": "HUM123456",
+    "groupNumber": "GRP789"
+  },
+  "source": {
+    "system": "PartnerCareSoft",
+    "submittedAt": "2025-11-02T16:42:19Z"
+  }
+}
